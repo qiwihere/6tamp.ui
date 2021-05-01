@@ -18,8 +18,5 @@
     "react-grid-system": "^7.1.2",
     "react-router-dom": "^5.2.0",
     "react-transition-group": "^4.4.1"
-  },
-  "devDependencies": {
-    "@babel/preset-react": "^7.0.0"
   }
 }
