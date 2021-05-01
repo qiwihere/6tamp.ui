@@ -10,11 +10,9 @@
   "author": "artemlipovoy",
   "main": "lib/index.js",
   "scripts": {
-    "start": "node scripts/start.js",
-    "build": "node scripts/build.js",
     "lib": "export NODE_ENV=development ; babel src --out-dir lib --copy-files"
   },
-  "peerDependencies": {
+  "dependencies": {
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-grid-system": "^7.1.2",
@@ -25,5 +23,8 @@
     "@babel/cli": "^7.13.16",
     "@babel/core": "^7.14.0",
     "babel-preset-react-app": "^10.0.0"
-  }
+  },
+  "files": [
+    "lib"
+  ]
 }
