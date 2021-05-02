@@ -13,7 +13,6 @@
     "lib": "export NODE_ENV=development ; babel src --out-dir lib --copy-files"
   },
   "dependencies": {
-    "@babel/runtime": "^7.14.0",
     "prop-types": "^15.7.2",
     "react": "^17.0.1",
     "react-grid-system": "^7.1.2",
