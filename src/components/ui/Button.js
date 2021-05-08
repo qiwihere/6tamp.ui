@@ -3,12 +3,13 @@ import {colors, StyledA, StyledButton, StyledButtonLink} from "./styles";
 import PropTypes from "prop-types"
 
 const Button = props => {
-    if(props.type === "link"){
-        return <StyledButtonLink {...props}>{props.children}</StyledButtonLink>
-    }else if(props.type === "href"){
+    if(props.type === "href"){
         return <StyledA {...props}>{props.children}</StyledA>
+    }else if(props.type === "link"){
+        return <StyledButtonLink {...props}>{props.children}</StyledButtonLink>
+    }else {
+        return <StyledButton {...props}>{props.children}</StyledButton>
     }
-    return <StyledButton {...props}>{props.children}</StyledButton>
 }
 
 Button.propTypes = {
