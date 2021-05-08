@@ -106,7 +106,20 @@ const StyledButtonCss = css`
   }
 `
 export const StyledButton = styled.button`${StyledButtonCss}`
+
 export const StyledButtonLink = styled(Link)`
+    ${StyledButtonCss};
+    text-decoration: none;
+    display: block;
+    
+    ${state=>state.disabled?`
+        color: ${colors[(state.appearance??"normal")+"_disabled"].text};
+        background: ${colors[(state.appearance??"normal")+"_disabled"].background};
+        border: 1px solid ${colors[(state.appearance??"normal")+"_disabled"].border};
+    `:null}
+`
+
+export const StyledA = styled.a`
     ${StyledButtonCss};
     text-decoration: none;
     display: block;
