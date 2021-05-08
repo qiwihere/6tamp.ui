@@ -4,9 +4,9 @@ import PropTypes from "prop-types"
 
 const Button = props => {
     if(props.type === "link"){
-        if(props.to.includes('http'))
-            return <StyledA {...props} target={"_blank"}>{props.children}</StyledA>
         return <StyledButtonLink {...props}>{props.children}</StyledButtonLink>
+    }else if(props.type === "href"){
+        return <StyledA {...props}>{props.children}</StyledA>
     }
     return <StyledButton {...props}>{props.children}</StyledButton>
 }
